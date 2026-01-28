@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Data Analyst | Life Insurance Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+
+        .glass-header {
+            background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .profile-img-container {
+            position: relative;
+            padding: 4px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-divider {
+            height: 24px;
+            width: 1px;
+            background-color: #d1d5db;
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            transition: transform 0.2s ease;
+        }
+
+        .card-shadow:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-gradient {
+            background: #2563eb;
+            transition: all 0.3s ease;
+        }
+
+        .btn-gradient:hover {
+            background: #1d4ed8;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .tech-pill {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+        }
+
+        /* Responsive adjustments for the scrollable tech stack */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        @media (max-width: 768px) {
+            .stat-divider {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="p-2 md:p-8">
+
+    <div class="max-w-5xl mx-auto bg-white rounded-2xl overflow-hidden shadow-2xl">
+        
+        <!-- Header Section -->
+        <header class="glass-header p-6 md:p-12">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <!-- Profile Image -->
+                <div class="profile-img-container w-40 h-40 md:w-48 md:h-48 flex-shrink-0">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300&h=300&auto=format&fit=crop" 
+                         alt="Profile" 
+                         class="w-full h-full object-cover rounded-full"
+                         onerror="this.src='https://ui-avatars.com/api/?name=Data+Analyst&size=300'">
+                </div>
+
+                <!-- Bio -->
+                <div class="flex-grow text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-2 text-gray-500 text-sm font-medium mb-3 tracking-wide">
+                        <span class="uppercase">Senior Data Analyst</span>
+                        <span>•</span>
+                        <span class="text-blue-600">Specialized in Life Insurance</span>
+                    </div>
+                    <h1 class="text-2xl md:text-4xl font-bold text-slate-800 leading-tight mb-4">
+                        Optimizing Risk Models. <br class="hidden md:block">
+                        Driving Underwriting Efficiency.
+                    </h1>
+                    <p class="text-gray-600 mb-6 max-w-xl text-sm md:text-base">
+                        Leveraging 7+ years of experience in Life Insurance analytics to transform complex morbidity/mortality data into actionable pricing strategies and automated risk assessments.
+                    </p>
+                    
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-4">
+                        <button class="btn-gradient text-white px-6 py-2.5 rounded-lg font-semibold text-sm flex items-center gap-2">
+                            <i class="fab fa-linkedin"></i> Let's Connect
+                        </button>
+                        <div class="flex gap-4 text-gray-400 text-xl">
+                            <i class="fab fa-github hover:text-gray-800 cursor-pointer"></i>
+                            <i class="fas fa-envelope hover:text-blue-600 cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Stats Bar - Fixed wrapping for responsiveness -->
+        <div class="bg-gray-50 border-y border-gray-200 py-6 px-4">
+            <div class="stat-bar flex flex-wrap justify-center items-center gap-y-4 gap-x-6 md:gap-x-8 text-center md:text-left text-sm font-medium text-gray-600">
+                <div class="flex flex-col md:flex-row items-center gap-1">
+                    <span class="text-blue-600 font-bold text-base">7+ Years</span>
+                    <span class="text-xs uppercase md:normal-case md:text-sm">Industry Exp</span>
+                </div>
+                <div class="stat-divider hidden md:block"></div>
+                <div class="flex flex-col md:flex-row items-center gap-1">
+                    <span class="text-blue-600 font-bold text-base">15%</span>
+                    <span class="text-xs uppercase md:normal-case md:text-sm">Claims Efficiency Gain</span>
+                </div>
+                <div class="stat-divider hidden md:block"></div>
+                <div class="flex flex-col md:flex-row items-center gap-1">
+                    <span class="text-blue-600 font-bold text-base">MEXT</span>
+                    <span class="text-xs uppercase md:normal-case md:text-sm">Kobe University Scholar</span>
+                </div>
+                <div class="stat-divider hidden md:block"></div>
+                <div class="flex flex-col md:flex-row items-center gap-1">
+                    <span class="text-blue-600 font-bold text-base">LOMA</span>
+                    <span class="text-xs uppercase md:normal-case md:text-sm">Certified Associate</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tech Stack Scroller - Added better scroll hints and touch support -->
+        <div class="bg-white px-4 py-4 border-b border-gray-100 overflow-hidden relative">
+            <div class="flex gap-3 overflow-x-auto no-scrollbar pb-2 mask-fade">
+                <div class="tech-pill"><i class="fab fa-python text-blue-500"></i> Python (Pandas/SciPy)</div>
+                <div class="tech-pill"><i class="fas fa-database text-green-500"></i> SQL Server / T-SQL</div>
+                <div class="tech-pill"><i class="fas fa-brain text-purple-500"></i> Actuarial Modeling</div>
+                <div class="tech-pill"><i class="fas fa-chart-line text-red-500"></i> Tableau / PowerBI</div>
+                <div class="tech-pill"><i class="fas fa-cloud text-sky-500"></i> Azure Data Factory</div>
+                <div class="tech-pill"><i class="fas fa-code-branch text-orange-500"></i> R (Survival Analysis)</div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="p-6 md:p-12 space-y-12">
+            
+            <!-- Tech Stack / Experience Section -->
+            <section>
+                <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <span class="w-2 h-6 bg-blue-600 rounded-full"></span>
+                    Key Projects & Impact
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Project 1 -->
+                    <div class="bg-white border border-gray-200 p-6 rounded-xl card-shadow flex flex-col">
+                        <h3 class="font-bold text-slate-800 mb-2">Automated Underwriting</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-4 flex-grow">
+                            Developed a Python-based scoring engine for term life policies, reducing manual review requirements by 40% for healthy applicants.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded uppercase font-bold">Python</span>
+                            <span class="text-[10px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded uppercase font-bold">XGBoost</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="bg-white border border-gray-200 p-6 rounded-xl card-shadow flex flex-col">
+                        <h3 class="font-bold text-slate-800 mb-2">Claims Leakage Analysis</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-4 flex-grow">
+                            Identified $1.2M in annual claims leakage through SQL-driven discrepancy audits between policy admin systems and claims databases.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] bg-green-50 text-green-600 px-2 py-0.5 rounded uppercase font-bold">SQL</span>
+                            <span class="text-[10px] bg-green-50 text-green-600 px-2 py-0.5 rounded uppercase font-bold">Tableau</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="bg-white border border-gray-200 p-6 rounded-xl card-shadow flex flex-col">
+                        <h3 class="font-bold text-slate-800 mb-2">Mortality Table Migration</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-4 flex-grow">
+                            Led the technical data migration for updated mortality tables (VBT 2015), ensuring zero downtime for live pricing engines.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] bg-purple-50 text-purple-600 px-2 py-0.5 rounded uppercase font-bold">Actuarial</span>
+                            <span class="text-[10px] bg-purple-50 text-purple-600 px-2 py-0.5 rounded uppercase font-bold">Data Ops</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 flex justify-center md:justify-end">
+                    <button class="w-full md:w-auto bg-blue-600 text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-blue-700">
+                        Download Case Studies (PDF)
+                    </button>
+                </div>
+            </section>
+
+            <!-- Education & Certification -->
+            <section>
+                <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <span class="w-2 h-6 bg-blue-600 rounded-full"></span>
+                    Education & Credentials
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white border border-gray-200 p-6 rounded-xl card-shadow flex gap-4">
+                        <div class="bg-blue-50 p-3 rounded-lg self-start">
+                            <i class="fas fa-graduation-cap text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 text-sm md:text-base">Master of Economics</h3>
+                            <p class="text-xs md:text-sm text-gray-500">Kobe University, Japan</p>
+                            <p class="text-[10px] md:text-xs text-blue-600 font-medium mt-1">MEXT Scholar | 2019 - 2021</p>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-gray-200 p-6 rounded-xl card-shadow flex gap-4">
+                        <div class="bg-green-50 p-3 rounded-lg self-start">
+                            <i class="fas fa-certificate text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 text-sm md:text-base">LOMA 281 & 291</h3>
+                            <p class="text-xs md:text-sm text-gray-500">Life Management Institute</p>
+                            <p class="text-[10px] md:text-xs text-green-600 font-medium mt-1">Operations Specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer Call to Action -->
+        <footer class="bg-slate-900 text-white p-8 md:p-12 text-center">
+            <h2 class="text-xl md:text-2xl font-bold mb-6 px-4">Ready to optimize your insurance operations?</h2>
+            <button class="w-full md:w-auto bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-xl font-bold text-base md:text-lg transition-transform active:scale-95 mb-8">
+                Let's Discuss Opportunities
+            </button>
+            <div class="pt-8 border-t border-slate-800 text-slate-500 text-xs md:text-sm">
+                <p>&copy; 2026 Norinreaksmey Phalla | Data Portfolio</p>
+                <p class="mt-2 flex items-center justify-center gap-2">
+                    <i class="fas fa-map-marker-alt text-red-500"></i> Based in Tokyo / Remote
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scroll behavior script -->
+    <script>
+        // Simple UI interactions
+        document.querySelectorAll('.card-shadow').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                // Potential hover effects
+            });
+        });
+    </script>
+</body>
+</html>
